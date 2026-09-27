@@ -24,11 +24,11 @@ const employee = {
 };
 
 const totalSalary = (employee) => {
-    const total = employee?.emp_salary?.basic+
-                  employee?.emp_salary?.hra+
-                  employee?.emp_salary?.da+
-                  employee?.emp_salary?.fa-
-                  employee?.emp_salary?.pf-
+    const total = employee?.emp_salary?.basic +
+                  employee?.emp_salary?.hra +
+                  employee?.emp_salary?.da +
+                  employee?.emp_salary?.fa -
+                  employee?.emp_salary?.pf -
                   employee?.emp_salary?.pt;
 
     return total;
