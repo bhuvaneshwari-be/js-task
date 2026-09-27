@@ -2,6 +2,9 @@ const employee = {
     empid : 121,
     emp_firstName : "Bhuvaneshwari",
     emp_lastName : "Sankar",
+    emp_fullname : function() {
+        return this.emp_firstName+ " " +this.emp_lastName;
+    },
     emp_address : {
         street : "South Yadavar Street",
         town : "Srivaikundam"
@@ -33,6 +36,7 @@ const totalSalary = (employee) => {
 
 
 console.log("Employee Name: ",employee?.emp_firstName+ " " +employee?.emp_lastName)
+console.log("Full Name: ",employee?.emp_fullname())
 console.log("Employee Address: ", employee?.emp_address?.street+ " " +employee?.emp_address?.town)
 console.log("Experience: ", employee?.emp_experience?.company1)
 console.log(totalSalary(employee));
